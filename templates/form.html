@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Network Form</title>
+</head>
+<body>
+    <h1>Network Data</h1>
+
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    <form method="POST" action="/">
+        <label for="source_port">Source Port:</label><br>
+        <input type="number" name="source_port" id="source_port" required><br><br>
+
+        <label for="destination_port">Destination Port:</label><br>
+        <input type="number" name="destination_port" id="destination_port" required><br><br>
+
+        <label for="nat_source_port">NAT Source Port:</label><br>
+        <input type="number" name="nat_source_port" id="nat_source_port" required><br><br>
+
+        <label for="nat_destination_port">NAT Destination Port:</label><br>
+        <input type="number" name="nat_destination_port" id="nat_destination_port" required><br><br>
+
+        <label for="bytes_">Bytes:</label><br>
+        <input type="number" name="bytes_" id="bytes_" required><br><br>
+
+        <label for="bytes_sent">Bytes Sent:</label><br>
+        <input type="number" name="bytes_sent" id="bytes_sent" required><br><br>
+
+        <label for="bytes_received">Bytes Received:</label><br>
+        <input type="number" name="bytes_received" id="bytes_received" required><br><br>
+
+        <label for="packets">Packets:</label><br>
+        <input type="number" name="packets" id="packets" required><br><br>
+
+        <label for="elapsed_time">Elapsed Time (sec):</label><br>
+        <input type="number" name="elapsed_time" id="elapsed_time" required><br><br>
+
+        <label for="pkts_sent">pkts_sent:</label><br>
+        <input type="number" name="pkts_sent" id="pkts_sent" required><br><br>
+
+        <label for="pkts_received">pkts_received:</label><br>
+        <input type="number" name="pkts_received" id="pkts_received" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
