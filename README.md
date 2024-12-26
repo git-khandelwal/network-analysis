@@ -8,12 +8,11 @@ This project focuses on analyzing a network firewall dataset, transforming the f
 ## Table of Contents
 1. [Overview](#overview)  
 2. [Project Structure](#project-structure)  
-3. [Getting Started](#getting-started)  
-4. [Data Exploration (EDA)](#data-exploration-eda)  
-5. [Model Pipeline](#model-pipeline)  
-6. [Neural Network Training](#neural-network-training)  
-7. [Evaluation](#evaluation)  
-8. [Frontend Application](#frontend-application)  
+3. [Data Exploration (EDA)](#data-exploration-eda)  
+4. [Model Pipeline](#model-pipeline)  
+5. [Neural Network Training](#neural-network-training)  
+6. [Evaluation](#evaluation)  
+7. [Frontend Application](#frontend)  
 
 ---
 
@@ -31,20 +30,35 @@ This project focuses on analyzing a network firewall dataset, transforming the f
 ---
 
 ## Project Structure
+
 network-analysis/
+
 ├── templates/
-│   └── form.html
-├── app.py
-├── dataset.py
-├── eda.ipynb
-├── log2.csv
-├── model.py
-├── my_pipeline.pkl
-├── pipe.py
-├── predict.py
-├── preprocess.py
-├── train.py
-└── trained_weights.pth
+
+│   └── form.html             # HTML form for user input
+
+├── app.py                    # Backend application (e.g., Flask)
+
+├── dataset.py                # Data loading or custom dataset logic
+
+├── eda.ipynb                 # Exploratory Data Analysis notebook
+
+├── log2.csv                  # Example CSV dataset
+
+├── model.py                  # Neural network model definition
+
+├── my_pipeline.pkl           # Serialized scikit-learn pipeline
+
+├── pipe.py                   # Pipeline creation & setup script
+
+├── predict.py                # Script or module for inference
+
+├── preprocess.py             # Data preprocessing functions
+
+├── train.py                  # Model training script
+
+└── trained_weights.pth       # Saved model weights after training
+
 
 ## Data Exploration (EDA)
 
